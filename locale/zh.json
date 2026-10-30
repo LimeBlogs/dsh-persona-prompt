@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "人设提示词",
+    "description": "在「设置 → 人设」中编辑 HARNESS_IDENTITY 与 DEPLOYMENT_PERSONA_PREFIX；默认只注入主会话，可在页面开关里选择是否同时注入子代理。"
+  }
+}

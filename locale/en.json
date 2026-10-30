@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Persona Prompt",
+    "description": "Edit HARNESS_IDENTITY and DEPLOYMENT_PERSONA_PREFIX from Settings → Persona; top-level sessions only by default, with a switch for subagents."
+  }
+}

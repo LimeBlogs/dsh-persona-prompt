@@ -1,0 +1,7 @@
+# dsh-persona-prompt 的 bundle patch。
+#
+# 只插入一条宿主行；客户端半边由 package.json 的 `dsh.client` 与 `./client`
+# 导出编进 Web boot 图，跟随这条宿主行的启停一起加载 / 卸载。
+- insert:
+    - id: persona-prompt
+      name: dsh-persona-prompt

@@ -1,0 +1,50 @@
+{
+  "name": "dsh-persona-prompt",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "在「设置 → 人设」中编辑 HARNESS_IDENTITY 与 DEPLOYMENT_PERSONA_PREFIX 两个系统提示词字段，全局生效。",
+  "license": "MIT",
+  "author": "limeblogs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limeblogs/dsh-persona-prompt.git"
+  },
+  "homepage": "https://github.com/limeblogs/dsh-persona-prompt#readme",
+  "bugs": {
+    "url": "https://github.com/limeblogs/dsh-persona-prompt/issues"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "test/*.mjs"
+  ],
+  "scripts": {
+    "smoke": "node test/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
